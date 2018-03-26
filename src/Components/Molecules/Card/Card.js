@@ -6,10 +6,11 @@ class Card extends Component{
   render() {
 
     return(
-      <li className="Card">
+      <div className="Card">
         <p>{this.props.desc[0]}</p>
+        <hr />
         <p>{this.props.desc[1]}</p>
-      </li>
+      </div>
     );
   }
 

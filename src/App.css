@@ -1,7 +1,29 @@
 .App {
-  background-color: rgb(20, 237, 140);
-  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  background-image: url("./App-bg.png");
+  background-size: cover;
+  background-repeat: norepeat;
+  width: 375px;
+  height: 667px;
+  padding: 0 0 0 0 ;
   color: white;
-  padding: 10px;
-  text-align: center;
+  overflow: hidden;
+}
+
+.shufflebtbn {
+  position: relative;
+  width: 166px;
+  height: 46px;
+  background-image: url("shufflebtbn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  top: -23px;
 }

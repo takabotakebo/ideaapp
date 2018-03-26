@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Postit from '../../Molecules/Postit/Postit';
+import './Bord.css';
 
 class Bord extends Component{
 
@@ -21,9 +22,9 @@ class Bord extends Component{
     )
 
     return(
-      <ul>
+      <div className="Bord">
         {postits}
-      </ul>
+      </div>
     );
   }
 

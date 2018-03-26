@@ -6,9 +6,7 @@ class Postit extends Component{
   render() {
 
     return(
-      <li className="Postit">
-        <p>{this.props.desc}</p>
-      </li>
+      <p className="Postit">{this.props.desc}</p>
     );
   }
 

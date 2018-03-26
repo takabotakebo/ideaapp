@@ -1,0 +1,13 @@
+.Bord {
+  position: relative;
+  width: calc(100% - 40px);
+  background-image: url("./Bord-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 214px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}

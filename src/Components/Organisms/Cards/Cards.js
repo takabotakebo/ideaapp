@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../Molecules/Card/Card';
+import './Cards.css';
 
 class Cards extends Component{
 
@@ -21,9 +22,9 @@ class Cards extends Component{
     )
 
     return(
-      <ul>
+      <div className="Cards">
         {cards}
-      </ul>
+      </div>
     );
   }
 

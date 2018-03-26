@@ -67,15 +67,13 @@ class App extends Component {
     console.log(this.state.todos);
     return (
       <div className="App">
-        <h1>tがんばろー</h1>
-        <div onClick={this.shuffleSubmit.bind(this)}>シャッフル</div>
-        <Form handleSubmit={this.handleSubmit.bind(this)} />
         <Bord
           postits={this.state.postits}
           isLoading={this.state.isLoading}
           hasError={this.state.hasError}
         />
-
+        <div onClick={this.shuffleSubmit.bind(this)} className="shufflebtbn" />
+        <Form handleSubmit={this.handleSubmit.bind(this)} />
         <Cards
           cards={this.state.cards}
           isLoading={this.state.isLoading}
