@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Todo from '../../Molecules/Todo/Todo';
+import Postit from '../../Molecules/Postit/Postit';
 
-class TodoList extends Component{
+class Bord extends Component{
 
   render(){
 
@@ -13,21 +13,20 @@ class TodoList extends Component{
       return <h2>Error!!!</h2>
     }
 
-    const todos = this.props.todos.map( todo =>
-      <Todo
-        key={todo.id}
-        {...todo}
-        setTodoStatus={this.props.setTodoStatus}
+    const postits = this.props.postits.map( postit =>
+      <Postit
+        key={postit.id}
+        desc={postit}
       />
     )
 
     return(
       <ul>
-        {todos}
+        {postits}
       </ul>
     );
   }
 
 }
 
-export default TodoList
+export default Bord
