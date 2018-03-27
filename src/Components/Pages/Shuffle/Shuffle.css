@@ -1,0 +1,70 @@
+.Shuffle {
+  position: relative;
+  margin: 0 auto;
+  background-image: url("./App-bg.png");
+  background-size: cover;
+  background-repeat: norepeat;
+  width: 375px;
+  height: 642px;
+  padding: 0 0 0 0 ;
+  color: white;
+  overflow: hidden;
+}
+
+.shufflebtbn {
+  position: relative;
+  width: 166px;
+  height: 46px;
+  background-image: url("shufflebtbn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  top: -23px;
+}
+
+.shufflebtbn:active {
+  position: relative;
+  width: 176px;
+  height: 50px;
+  background-image: url("shufflebtbn.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  top: -23px;
+}
+
+.modechange {
+  position: relative;
+  width: calc( 100% - 10px);
+  margin: 2px 5px 0px 5px;
+  background-color: white;
+}
+
+.resetbtn {
+  position: absolute;
+  width: 35px;
+  top: 50px;
+  right: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.resetbtn:active {
+  position: absolute;
+  width: 45px;
+  top: 45px;
+  right: 5px;
+  z-index: 100;
+}

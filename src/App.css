@@ -1,29 +1,3 @@
 .App {
   position: relative;
-  margin: 0 auto;
-  background-image: url("./App-bg.png");
-  background-size: cover;
-  background-repeat: norepeat;
-  width: 375px;
-  height: 642px;
-  padding: 0 0 0 0 ;
-  color: white;
-  overflow: hidden;
-}
-
-.shufflebtbn {
-  position: relative;
-  width: 166px;
-  height: 46px;
-  background-image: url("shufflebtbn.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-  margin: 0 auto;
-  top: -23px;
 }
