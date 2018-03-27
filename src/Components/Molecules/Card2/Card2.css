@@ -1,0 +1,19 @@
+.Card {
+  width: 300px;
+  height: 25px;
+  border: 3px solid black;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.Card p{
+  width: 300px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}

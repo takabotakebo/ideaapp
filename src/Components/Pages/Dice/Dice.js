@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import './Shuffle.css';
-import Bord from '../../Organisms/Bord/Bord';
-import Cards from '../../Organisms/Cards/Cards';
+import './Dice.css';
+import Cards2 from '../../Organisms/Cards2/Cards2';
 import Form from '../../Organisms/Form/Form';
 
-class Shuffle extends Component {
+class Dice extends Component {
 
   constructor(){
-    super()
-    const postits = [];
+    super();
     const cards = [];
     this.state = {
       isLoading: false,
       hasError: false,
-      postits: postits,
       cards: cards
     }
   }
@@ -24,24 +21,15 @@ class Shuffle extends Component {
       return ;
     }
     const desc = e.target.desc.value;
-    const postits = this.state.postits.slice();
-    postits.push(desc);
-    this.setState({ postits: postits });
+    const cards = this.state.cards.slice();
+    cards.push(desc);
+    this.setState({ cards: cards });
     e.target.desc.value = "";
   }
 
   shuffleSubmit() {
-    let cards = this.shuffle(this.state.postits.slice());
-    if(( cards.length % 2 ) !== 0 ){
-      cards.push("ー");
-      cards = this.splitAayrr(cards, 2);
-      console.log(cards);
-      this.setState({ cards: cards });
-    } else {
-      cards = this.splitAayrr(cards, 2);
-      console.log(cards);
-      this.setState({ cards: cards });
-    }
+    let cards = this.shuffle(this.state.cards.slice());
+    this.setState({ cards: cards });
   }
 
   shuffle(array) {
@@ -74,17 +62,12 @@ class Shuffle extends Component {
 
   render() {
     return (
-      <div className="Shuffle">
-        <img src="./modechange-suf.png" className="modechange" onClick={this.props.changePage} alt="pic"/>
+      <div className="Dice">
+        <img src="./modechange-dice.png" className="modechange" onClick={this.props.changePage} alt="pic"/>
         <img src="./reset.png" className="resetbtn" onClick={this.reset.bind(this)} alt="pic"/>
-        <Bord
-          postits={this.state.postits}
-          isLoading={this.state.isLoading}
-          hasError={this.state.hasError}
-        />
-        <div onClick={this.shuffleSubmit.bind(this)} className="shufflebtbn" />
         <Form handleSubmit={this.handleSubmit.bind(this)} />
-        <Cards
+        <div onClick={this.shuffleSubmit.bind(this)} className="shufflebtbn2" />
+        <Cards2
           cards={this.state.cards}
           isLoading={this.state.isLoading}
           hasError={this.state.hasError}
@@ -94,4 +77,4 @@ class Shuffle extends Component {
   }
 }
 
-export default Shuffle;
+export default Dice;
