@@ -29,8 +29,8 @@
   z-index: 500;
 }
 
-.shufflebtbn:active {
-  position: relative;
+.shufflebtbn2:active {
+  position: absolute;
   width: 176px;
   height: 50px;
   background-image: url("shufflebtbn.png");
@@ -42,8 +42,9 @@
   color: white;
   font-size: 15px;
   font-weight: bold;
-  margin: 0 auto;
-  top: 100px;
+  bottom: 78px;
+  right: 5px;
+  z-index: 500;
 }
 
 .modechange {

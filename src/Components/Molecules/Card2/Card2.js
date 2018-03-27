@@ -6,7 +6,7 @@ class Card extends Component{
   render() {
 
     return(
-      <div className="Card">
+      <div className="Card2">
         <p>{this.props.num + 1}. {this.props.desc}</p>
       </div>
     );

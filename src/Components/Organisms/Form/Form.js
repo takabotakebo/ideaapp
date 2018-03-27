@@ -6,7 +6,7 @@ class Form extends Component {
   render() {
     return (
       <form onSubmit={this.props.handleSubmit} className="Form">
-        <input name="desc" placeholder="入力" defaultValue="作ってます！"/>
+        <input name="desc" placeholder="入力" defaultValue=""/>
         <button type="submit">メモ</button>
       </form>
     )
